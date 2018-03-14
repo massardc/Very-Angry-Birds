@@ -14,6 +14,7 @@
 		BFA0101B205996180078CBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA01019205996180078CBD4 /* Main.storyboard */; };
 		BFA0101D2059961A0078CBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA0101C2059961A0078CBD4 /* Assets.xcassets */; };
 		BFA010202059961A0078CBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA0101E2059961A0078CBD4 /* LaunchScreen.storyboard */; };
+		BFA0102820599A7F0078CBD4 /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BFA0101C2059961A0078CBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA0101F2059961A0078CBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA010212059961A0078CBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BFA0101C2059961A0078CBD4 /* Assets.xcassets */,
 				BFA0101E2059961A0078CBD4 /* LaunchScreen.storyboard */,
 				BFA010212059961A0078CBD4 /* Info.plist */,
+				BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */,
 			);
 			path = "Very Angry Birds";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA0102820599A7F0078CBD4 /* BirdTileSet.sks in Resources */,
 				BFA0101B205996180078CBD4 /* Main.storyboard in Resources */,
 				BFA01012205996180078CBD4 /* GameScene.sks in Resources */,
 				BFA0101D2059961A0078CBD4 /* Assets.xcassets in Resources */,
