@@ -13,10 +13,14 @@ class GameScene: SKScene {
     
     //MARK: - Variables
     var mapNode = SKTileMapNode()
+    
     let gameCamera = GameCamera()
     var panRecognizer = UIPanGestureRecognizer()
     var pinchRecognizer = UIPinchGestureRecognizer()
     var maxScale: CGFloat = 0
+    
+    var bird = Bird(type: .red)
+    let anchor = SKNode()
     
     override func didMove(to view: SKView) {
         setupLevel()
@@ -40,6 +44,9 @@ class GameScene: SKScene {
         }
         
         addCamera()
+        anchor.position = CGPoint(x: mapNode.frame.midX / 2, y: mapNode.frame.midY / 2)
+        addChild(anchor)
+        addBird()
     }
     
     func addCamera() {
@@ -49,6 +56,12 @@ class GameScene: SKScene {
         camera = gameCamera
         gameCamera.setConstraints(withScene: self, andFrame: mapNode.frame, toNode: nil)
     }
+    
+    func addBird() {
+        bird.position = anchor.position
+        addChild(bird)
+    }
+    
 }
 
 //MARK: - Extension for Gesture Recognizer methods
