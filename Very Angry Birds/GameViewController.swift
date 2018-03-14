@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  Very Angry Birds
 //
-//  Created by School on 14/03/2018.
+//  Created by ClementM on 14/03/2018.
 //  Copyright © 2018 ClementM. All rights reserved.
 //
 
@@ -31,25 +31,5 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
+    
 }

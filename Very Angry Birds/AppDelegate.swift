@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Very Angry Birds
 //
-//  Created by School on 14/03/2018.
+//  Created by ClementM on 14/03/2018.
 //  Copyright © 2018 ClementM. All rights reserved.
 //
 

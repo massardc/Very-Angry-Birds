@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BFA01010205996180078CBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0100F205996180078CBD4 /* AppDelegate.swift */; };
 		BFA01012205996180078CBD4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA01011205996180078CBD4 /* GameScene.sks */; };
-		BFA01014205996180078CBD4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA01013205996180078CBD4 /* Actions.sks */; };
 		BFA01016205996180078CBD4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA01015205996180078CBD4 /* GameScene.swift */; };
 		BFA01018205996180078CBD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA01017205996180078CBD4 /* GameViewController.swift */; };
 		BFA0101B205996180078CBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA01019205996180078CBD4 /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 		BFA0100C205996180078CBD4 /* Very Angry Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Very Angry Birds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA0100F205996180078CBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA01011205996180078CBD4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		BFA01013205996180078CBD4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		BFA01015205996180078CBD4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BFA01017205996180078CBD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BFA0101A205996180078CBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			children = (
 				BFA0100F205996180078CBD4 /* AppDelegate.swift */,
 				BFA01011205996180078CBD4 /* GameScene.sks */,
-				BFA01013205996180078CBD4 /* Actions.sks */,
 				BFA01015205996180078CBD4 /* GameScene.swift */,
 				BFA01017205996180078CBD4 /* GameViewController.swift */,
 				BFA01019205996180078CBD4 /* Main.storyboard */,
@@ -135,7 +132,6 @@
 				BFA01012205996180078CBD4 /* GameScene.sks in Resources */,
 				BFA0101D2059961A0078CBD4 /* Assets.xcassets in Resources */,
 				BFA010202059961A0078CBD4 /* LaunchScreen.storyboard in Resources */,
-				BFA01014205996180078CBD4 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Very Angry Birds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Very Angry Birds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
