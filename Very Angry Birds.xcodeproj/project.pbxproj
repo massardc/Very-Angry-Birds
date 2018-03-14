@@ -16,6 +16,7 @@
 		BFA010202059961A0078CBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA0101E2059961A0078CBD4 /* LaunchScreen.storyboard */; };
 		BFA0102820599A7F0078CBD4 /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */; };
 		BFA010312059A3400078CBD4 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010302059A3400078CBD4 /* GameCamera.swift */; };
+		BFA010332059BB880078CBD4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010322059BB880078CBD4 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BFA010212059961A0078CBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
 		BFA010302059A3400078CBD4 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		BFA010322059BB880078CBD4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				BFA0100F205996180078CBD4 /* AppDelegate.swift */,
 				BFA010212059961A0078CBD4 /* Info.plist */,
+				BFA010322059BB880078CBD4 /* Configuration.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA01016205996180078CBD4 /* GameScene.swift in Sources */,
+				BFA010332059BB880078CBD4 /* Configuration.swift in Sources */,
 				BFA01018205996180078CBD4 /* GameViewController.swift in Sources */,
 				BFA010312059A3400078CBD4 /* GameCamera.swift in Sources */,
 				BFA01010205996180078CBD4 /* AppDelegate.swift in Sources */,
