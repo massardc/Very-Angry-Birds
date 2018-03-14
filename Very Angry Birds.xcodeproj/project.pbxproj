@@ -60,17 +60,57 @@
 		BFA0100E205996180078CBD4 /* Very Angry Birds */ = {
 			isa = PBXGroup;
 			children = (
-				BFA0100F205996180078CBD4 /* AppDelegate.swift */,
-				BFA01011205996180078CBD4 /* GameScene.sks */,
-				BFA01015205996180078CBD4 /* GameScene.swift */,
-				BFA01017205996180078CBD4 /* GameViewController.swift */,
+				BFA0102E20599E680078CBD4 /* TileSets */,
+				BFA0102920599E080078CBD4 /* UI */,
+				BFA0102C20599E1D0078CBD4 /* Scenes */,
+				BFA0102B20599E160078CBD4 /* ViewController */,
+				BFA0102A20599E100078CBD4 /* Template */,
+			);
+			path = "Very Angry Birds";
+			sourceTree = "<group>";
+		};
+		BFA0102920599E080078CBD4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				BFA01019205996180078CBD4 /* Main.storyboard */,
 				BFA0101C2059961A0078CBD4 /* Assets.xcassets */,
 				BFA0101E2059961A0078CBD4 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BFA0102A20599E100078CBD4 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				BFA0100F205996180078CBD4 /* AppDelegate.swift */,
 				BFA010212059961A0078CBD4 /* Info.plist */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		BFA0102B20599E160078CBD4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFA01017205996180078CBD4 /* GameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BFA0102C20599E1D0078CBD4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BFA01011205996180078CBD4 /* GameScene.sks */,
+				BFA01015205996180078CBD4 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BFA0102E20599E680078CBD4 /* TileSets */ = {
+			isa = PBXGroup;
+			children = (
 				BFA0102720599A7F0078CBD4 /* BirdTileSet.sks */,
 			);
-			path = "Very Angry Birds";
+			path = TileSets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
