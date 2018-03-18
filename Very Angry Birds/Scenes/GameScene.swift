@@ -34,6 +34,8 @@ class GameScene: SKScene {
     var roundState = RoundState.ready
     
     override func didMove(to view: SKView) {
+        physicsWorld.contactDelegate = self
+        
         setupLevel()
         setupGestureRecognizers()
     }
@@ -180,6 +182,36 @@ class GameScene: SKScene {
         }
     }
     
+}
+
+//MARK: Extension for SKPhysics Contact Delegate Methods
+extension GameScene: SKPhysicsContactDelegate {
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        let mask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        switch mask {
+        case PhysicsCategory.bird | PhysicsCategory.block,
+             PhysicsCategory.block | PhysicsCategory.edge:
+            if let block = contact.bodyA.node as? Block {
+                block.impact(withForce: Int(contact.collisionImpulse))
+            } else if let block = contact.bodyB.node as? Block {
+                block.impact(withForce: Int(contact.collisionImpulse))
+            }
+        case PhysicsCategory.block | PhysicsCategory.block:
+            if let block = contact.bodyA.node as? Block {
+                block.impact(withForce: Int(contact.collisionImpulse))
+            }
+            if let blockB = contact.bodyB.node as? Block{
+                blockB.impact(withForce: Int(contact.collisionImpulse))
+            }
+        case PhysicsCategory.bird | PhysicsCategory.edge:
+            // We can directly use the bird property of our class
+            bird.flying = false
+        default:
+            break
+        }
+    }
 }
 
 //MARK: - Extension for Gesture Recognizer methods
