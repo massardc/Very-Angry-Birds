@@ -52,6 +52,7 @@ class GameScene: SKScene {
             bird.grabbed = false
             bird.flying = true
             constraintToAnchor(active: false)
+            gameCamera.setConstraints(withScene: self, andFrame: mapNode.frame, toNode: bird)
             let dx = anchor.position.x - bird.position.x
             let dy = anchor.position.y - bird.position.y
             let impulse = CGVector(dx: dx, dy: dy)
@@ -77,6 +78,13 @@ class GameScene: SKScene {
         }
         
         addCamera()
+        
+        let dimensions = CGRect(x: 0, y: mapNode.tileSize.height, width: mapNode.frame.size.width, height: mapNode.frame.size.height - mapNode.tileSize.height)
+        physicsBody = SKPhysicsBody(edgeLoopFrom: dimensions)
+        physicsBody?.categoryBitMask = PhysicsCategory.edge
+        physicsBody?.contactTestBitMask = PhysicsCategory.bird | PhysicsCategory.block
+        physicsBody?.collisionBitMask = PhysicsCategory.all
+        
         anchor.position = CGPoint(x: mapNode.frame.midX / 2, y: mapNode.frame.midY / 2)
         addChild(anchor)
         addBird()

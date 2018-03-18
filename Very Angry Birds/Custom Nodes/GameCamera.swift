@@ -9,7 +9,7 @@
 import SpriteKit
 
 class GameCamera: SKCameraNode {
-
+    
     func setConstraints(withScene scene: SKScene, andFrame frame: CGRect, toNode node: SKNode?) {
         let scaledSize = CGSize(width: scene.size.width * xScale, height: scene.size.height * yScale)
         let boardContentRect = frame
@@ -22,7 +22,13 @@ class GameCamera: SKCameraNode {
         let yRange = SKRange(lowerLimit: insetContentRect.minY, upperLimit: insetContentRect.maxY)
         let levelEdgeConstraint = SKConstraint.positionX(xRange, y: yRange)
         
-        constraints = [levelEdgeConstraint]
+        if let node = node {
+            let zeroRange = SKRange(constantValue: 0.0)
+            let positionConstraint = SKConstraint.distance(zeroRange, to: node)
+            constraints = [positionConstraint, levelEdgeConstraint]
+        } else {
+            constraints = [levelEdgeConstraint]
+        }
     }
     
 }
