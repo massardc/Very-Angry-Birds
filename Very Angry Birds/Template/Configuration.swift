@@ -8,6 +8,11 @@
 
 import CoreGraphics
 
+struct ZPosition {
+    static let background: CGFloat = 0
+    static let obstacle: CGFloat = 1
+}
+
 struct PhysicsCategory {
     static let none: UInt32 = 0
     static let all: UInt32 = UInt32.max
