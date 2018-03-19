@@ -117,11 +117,12 @@ class GameScene: SKScene {
                 let block = Block(type: type)
                 block.size = child.size
                 block.position = child.position
-                block.color = UIColor.brown
+                block.zRotation = child.zRotation
                 block.zPosition = ZPosition.obstacle
                 block.createPhysicsBody()
                 mapNode.addChild(block)
-                child.color = UIColor.clear
+                // We don't need the placeholder anymore
+                child.removeFromParent()
             }
             
         }
