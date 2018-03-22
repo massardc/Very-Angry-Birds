@@ -20,6 +20,7 @@
 		BFA010352059BF2B0078CBD4 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010342059BF2B0078CBD4 /* Bird.swift */; };
 		BFAAD44720642D020027A220 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD44620642D020027A220 /* MenuScene.swift */; };
 		BFAAD44920642D1F0027A220 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD44820642D1F0027A220 /* LevelScene.swift */; };
+		BFAAD44B20643A560027A220 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD44A20643A560027A220 /* SpriteKitButton.swift */; };
 		BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */; };
 		BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4CD50205EE7E100C29AC0 /* Block.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		BFA010342059BF2B0078CBD4 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		BFAAD44620642D020027A220 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		BFAAD44820642D1F0027A220 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+		BFAAD44A20643A560027A220 /* SpriteKitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
 		BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		BFD4CD50205EE7E100C29AC0 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 		BFA0102F2059A3290078CBD4 /* Custom Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				BFAAD44A20643A560027A220 /* SpriteKitButton.swift */,
 				BFA010302059A3400078CBD4 /* GameCamera.swift */,
 				BFA010342059BF2B0078CBD4 /* Bird.swift */,
 				BFD4CD50205EE7E100C29AC0 /* Block.swift */,
@@ -227,6 +230,7 @@
 				BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */,
 				BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */,
 				BFAAD44720642D020027A220 /* MenuScene.swift in Sources */,
+				BFAAD44B20643A560027A220 /* SpriteKitButton.swift in Sources */,
 				BFA010332059BB880078CBD4 /* Configuration.swift in Sources */,
 				BFA01018205996180078CBD4 /* GameViewController.swift in Sources */,
 				BFA010312059A3400078CBD4 /* GameCamera.swift in Sources */,
