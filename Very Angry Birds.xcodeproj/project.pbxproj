@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BFA01010205996180078CBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0100F205996180078CBD4 /* AppDelegate.swift */; };
-		BFA01012205996180078CBD4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA01011205996180078CBD4 /* GameScene.sks */; };
+		BFA01012205996180078CBD4 /* GameScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFA01011205996180078CBD4 /* GameScene_1.sks */; };
 		BFA01016205996180078CBD4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA01015205996180078CBD4 /* GameScene.swift */; };
 		BFA01018205996180078CBD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA01017205996180078CBD4 /* GameViewController.swift */; };
 		BFA0101B205996180078CBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA01019205996180078CBD4 /* Main.storyboard */; };
@@ -18,6 +18,8 @@
 		BFA010312059A3400078CBD4 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010302059A3400078CBD4 /* GameCamera.swift */; };
 		BFA010332059BB880078CBD4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010322059BB880078CBD4 /* Configuration.swift */; };
 		BFA010352059BF2B0078CBD4 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA010342059BF2B0078CBD4 /* Bird.swift */; };
+		BFAAD44720642D020027A220 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD44620642D020027A220 /* MenuScene.swift */; };
+		BFAAD44920642D1F0027A220 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD44820642D1F0027A220 /* LevelScene.swift */; };
 		BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */; };
 		BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4CD50205EE7E100C29AC0 /* Block.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +27,7 @@
 /* Begin PBXFileReference section */
 		BFA0100C205996180078CBD4 /* Very Angry Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Very Angry Birds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA0100F205996180078CBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFA01011205996180078CBD4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BFA01011205996180078CBD4 /* GameScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene_1.sks; sourceTree = "<group>"; };
 		BFA01015205996180078CBD4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BFA01017205996180078CBD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BFA0101A205996180078CBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		BFA010302059A3400078CBD4 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		BFA010322059BB880078CBD4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BFA010342059BF2B0078CBD4 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		BFAAD44620642D020027A220 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		BFAAD44820642D1F0027A220 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		BFD4CD50205EE7E100C29AC0 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +116,10 @@
 		BFA0102C20599E1D0078CBD4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BFA01011205996180078CBD4 /* GameScene.sks */,
+				BFA01011205996180078CBD4 /* GameScene_1.sks */,
 				BFA01015205996180078CBD4 /* GameScene.swift */,
+				BFAAD44620642D020027A220 /* MenuScene.swift */,
+				BFAAD44820642D1F0027A220 /* LevelScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,7 +210,7 @@
 			files = (
 				BFA0102820599A7F0078CBD4 /* BirdTileSet.sks in Resources */,
 				BFA0101B205996180078CBD4 /* Main.storyboard in Resources */,
-				BFA01012205996180078CBD4 /* GameScene.sks in Resources */,
+				BFA01012205996180078CBD4 /* GameScene_1.sks in Resources */,
 				BFA0101D2059961A0078CBD4 /* Assets.xcassets in Resources */,
 				BFA010202059961A0078CBD4 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -220,11 +226,13 @@
 				BFA01016205996180078CBD4 /* GameScene.swift in Sources */,
 				BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */,
 				BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */,
+				BFAAD44720642D020027A220 /* MenuScene.swift in Sources */,
 				BFA010332059BB880078CBD4 /* Configuration.swift in Sources */,
 				BFA01018205996180078CBD4 /* GameViewController.swift in Sources */,
 				BFA010312059A3400078CBD4 /* GameCamera.swift in Sources */,
 				BFA010352059BF2B0078CBD4 /* Bird.swift in Sources */,
 				BFA01010205996180078CBD4 /* AppDelegate.swift in Sources */,
+				BFAAD44920642D1F0027A220 /* LevelScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
