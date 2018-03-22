@@ -76,6 +76,7 @@
 		BFA0100E205996180078CBD4 /* Very Angry Birds */ = {
 			isa = PBXGroup;
 			children = (
+				BFAAD44C206443100027A220 /* Levels */,
 				BFBDBC2B20605BCA007B143B /* Extensions */,
 				BFA0102F2059A3290078CBD4 /* Custom Nodes */,
 				BFA0102E20599E680078CBD4 /* TileSets */,
@@ -118,7 +119,6 @@
 		BFA0102C20599E1D0078CBD4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BFA01011205996180078CBD4 /* GameScene_1.sks */,
 				BFA01015205996180078CBD4 /* GameScene.swift */,
 				BFAAD44620642D020027A220 /* MenuScene.swift */,
 				BFAAD44820642D1F0027A220 /* LevelScene.swift */,
@@ -143,6 +143,14 @@
 				BFD4CD50205EE7E100C29AC0 /* Block.swift */,
 			);
 			path = "Custom Nodes";
+			sourceTree = "<group>";
+		};
+		BFAAD44C206443100027A220 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				BFA01011205996180078CBD4 /* GameScene_1.sks */,
+			);
+			path = Levels;
 			sourceTree = "<group>";
 		};
 		BFBDBC2B20605BCA007B143B /* Extensions */ = {
