@@ -202,6 +202,11 @@ extension GameScene: SKPhysicsContactDelegate {
             } else if let block = contact.bodyB.node as? Block {
                 block.impact(withForce: Int(contact.collisionImpulse))
             }
+            if let bird = contact.bodyA.node as? Bird {
+                bird.flying = false
+            } else if let bird = contact.bodyB.node as? Bird {
+                bird.flying = false
+            }
         case PhysicsCategory.block | PhysicsCategory.block:
             if let block = contact.bodyA.node as? Block {
                 block.impact(withForce: Int(contact.collisionImpulse))
