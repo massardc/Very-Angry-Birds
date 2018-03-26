@@ -26,6 +26,8 @@
 		BFAAD453206447EB0027A220 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAD452206447EB0027A220 /* AnimationHelper.swift */; };
 		BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */; };
 		BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4CD50205EE7E100C29AC0 /* Block.swift */; };
+		BFDA485C20697BE500AFEC41 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFDA485B20697BE500AFEC41 /* Levels.plist */; };
+		BFDA485E20697E7700AFEC41 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA485D20697E7700AFEC41 /* LevelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		BFAAD452206447EB0027A220 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		BFBDBC2C20605BDC007B143B /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		BFD4CD50205EE7E100C29AC0 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		BFDA485B20697BE500AFEC41 /* Levels.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		BFDA485D20697E7700AFEC41 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				BFA01011205996180078CBD4 /* GameScene_1.sks */,
 				BFAAD44D206443870027A220 /* GameScene_2.sks */,
 				BFAAD44F2064470A0027A220 /* GameScene_3.sks */,
+				BFDA485B20697BE500AFEC41 /* Levels.plist */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				BFAAD452206447EB0027A220 /* AnimationHelper.swift */,
+				BFDA485D20697E7700AFEC41 /* LevelData.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA0102820599A7F0078CBD4 /* BirdTileSet.sks in Resources */,
+				BFDA485C20697BE500AFEC41 /* Levels.plist in Resources */,
 				BFA0101B205996180078CBD4 /* Main.storyboard in Resources */,
 				BFAAD4502064470A0027A220 /* GameScene_3.sks in Resources */,
 				BFA01012205996180078CBD4 /* GameScene_1.sks in Resources */,
@@ -253,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDA485E20697E7700AFEC41 /* LevelData.swift in Sources */,
 				BFA01016205996180078CBD4 /* GameScene.swift in Sources */,
 				BFBDBC2D20605BDC007B143B /* SKNode+Extensions.swift in Sources */,
 				BFD4CD51205EE7E100C29AC0 /* Block.swift in Sources */,
