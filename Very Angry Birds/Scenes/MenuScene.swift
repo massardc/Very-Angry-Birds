@@ -17,9 +17,16 @@ class MenuScene: SKScene {
     }
     
     func setupMenu() {
+        let background = SKSpriteNode(imageNamed: "menuBackground")
+        background.position = CGPoint(x: frame.midX, y: frame.midY)
+        background.aspectScale(toSize: frame.size, width: true, withMultiplier: 1.0)
+        background.zPosition = ZPosition.background
+        addChild(background)
+        
         let button = SpriteKitButton(defaultButtonImage: "playButton", action: goToLevelScene, index: 0)
-        button.position = CGPoint(x: frame.midX, y: frame.midY)
+        button.position = CGPoint(x: frame.midX, y: frame.midY * 0.8)
         button.aspectScale(toSize: frame.size, width: false, withMultiplier: 0.2)
+        button.zPosition = ZPosition.hudLabel
         addChild(button)
     }
     
